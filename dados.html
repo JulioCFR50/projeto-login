@@ -5,24 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Planilha de Logística</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
+    html, body {
+      margin: 10;
+      padding: 10;
+      height: 100%;
       overflow: hidden;
+      background-color: #f0f0f0;
     }
+
+    .iframe-container {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
     iframe {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh;
       border: none;
+      width: 130%;
+      height: 104%;
+      transform: scale(0.95);
+      transform-origin: top left;
     }
   </style>
 </head>
 <body>
-  <iframe 
-    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSgEiMKW_OgJUf0MgLF922h4c1glZgzDrw49UtO4YOcyxEUl7Fle4S_G_tYKpiyurAGZVKiLUXYTh1t/pubhtml?widget=true&headers=true">
-  </iframe>
+  <div class="iframe-container">
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSgEiMKW_OgJUf0MgLF922h4c1glZgzDrw49UtO4YOcyxEUl7Fle4S_G_tYKpiyurAGZVKiLUXYTh1t/pubhtml?widget=true&headers=true&chrome=false" 
+      frameborder="0">
+    </iframe>
+  </div>
 </body>
 </html>
